@@ -28,6 +28,19 @@ public class WuBuzz {
      */
 
     public String wuTangClan(int n){
-        return null;
+        String output="1\n";
+        for (int i = 2; i <= n; i++) {
+            if (i % 3 == 0 && i % 5 == 0 ) {
+                output += "WuTang Forever\n";
+            } else if (i % 3 == 0) {
+                output += "Wu\n";
+
+            } else if(i % 5 == 0) {
+                output += "Tang\n";
+            } else {
+                output += i + "\n";
+            }
+        }
+        return output;
     }
 }

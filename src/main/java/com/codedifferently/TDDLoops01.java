@@ -1,5 +1,8 @@
 package com.codedifferently;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class TDDLoops01 {
     public String oneToTen(){
         String output ="oneToTen()\n"
@@ -20,20 +23,35 @@ public class TDDLoops01 {
         return output;
     }
 
-    public String squares(){
-        return "";
+    public String squares(int n){
+        String output = "squares()\n"
+                +"*** Output ***";
+        for(int i = 1; i <= n; i++) {
+            output += "\n"+ i * i;
+        }
+        return output;
     }
 
     public String random4(){
         return "";
     }
-
+//check if number is even
     public String even(int n){
-        return "";
+        String output = "even()\n"
+                +"*** Output ***";
+        for(int i = 0; i <= n; i += 2) {
+            output += "\n" + i;
+        }
+        return output;
     }
-
+// from 1-100, power of n for each
     public String powers(int n){
-        return "";
+        String output = "powers()\n"
+                +"*** Output ***";
+        for(int i = 1; i <= 10; i++) {
+            output += "\n" + (i ^ n);
+        }
+        return output;
     }
 
 }
